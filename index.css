@@ -3,7 +3,12 @@
 }
 
 button{
-    margin: 50px 450px;
+    float: right;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container {
