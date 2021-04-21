@@ -21,8 +21,8 @@ function createDiv(newSize = 4){
     container.appendChild(divBox)
 
     // determining width and height of each box
-    divBox.style.width = `${1000 / newSize}px`;
-    divBox.style.height = `${1000 / newSize}px`;
+    divBox.style.width = `${600 / newSize}px`;
+    divBox.style.height = `${600 / newSize}px`;
 
     // adjusting grids columns and rows in accordance with newSize 
     container.style.gridTemplateColumns = `repeat(${newSize}, 1fr)`;
