@@ -8,9 +8,7 @@ let randomMode = false;
 let defaultMode = true; 
 
 
-/// TO-DO's
-/// add a button to switch random color mode. 
-/// push the project to Github repo. 
+/// TO-DO'S
 
 
 function createDiv(newSize = 4){
@@ -71,11 +69,6 @@ function switchRandom(){
     console.log(randomMode,defaultMode);
     container.addEventListener('mouseover',changeColor)
 }
-
-// if random == true && default == false
-// mouseover, randomColor
-// else if random == false && default == true
-// mouseover, changeColor
 
 
 buttonChangeCanvas.addEventListener("click", getSize); 
