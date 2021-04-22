@@ -39,13 +39,12 @@ function createDiv(newSize = 4){
 
 function changeColor(e){
     let mouseTargeted = e.target;
-    mouseTargeted.style.backgroundColor = "blue"; 
-}
-
-function changeColorRandomly(e){
-    let mouseTargeted = e.target;
     let randomColor = "#" + ((1<<24)*Math.random() | 0).toString(16)
-    mouseTargeted.style.backgroundColor = randomColor;
+    if(randomMode == false){
+        mouseTargeted.style.backgroundColor = "blue"; 
+    } else {
+        mouseTargeted.style.backgroundColor = randomColor;
+    }
 }
 
 function getSize(){
@@ -70,11 +69,7 @@ function switchRandom(){
     console.log(allChilds)
     allChilds.forEach(child => child.style.backgroundColor= "");
     console.log(randomMode,defaultMode);
-    if (randomMode){
-        container.addEventListener('mouseover', changeColorRandomly)
-    }else {
-        container.addEventListener('mouseover', changeColor)
-    }
+    container.addEventListener('mouseover',changeColor)
 }
 
 // if random == true && default == false
